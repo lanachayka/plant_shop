@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+a {
+    text-decoration: none; 
+}
+
+.header-nav a {
+    font-family: 'Lora', serif;
+    color: rgb(25, 28, 24);
+    font-size: 17px;
+}
+
+.plantland-box {
+    background-image: url(/img/mainpic.webp);
+}
+.green-small-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #79a207;
+    font-weight: bold;
+    letter-spacing: 2.8px;
+}
+
+.plantland-title {
+    font-family: 'Lora', serif;
+    color: rgb(13, 60, 0);
+    font-size: 48px;
+}
+
+.plantland-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    color: rgb(25,28,24);
+}
+
+.green-nav {
+    background-color: #79a207;
+    border-radius: 28px;
+    height: 53.333px;
+    width: 131.875px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-nav a {
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans Pro", sans-serif;  
+    letter-spacing: .01em;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.white-nav {
+    border-radius: 28px;
+    border-color: rgb(25, 28, 24);
+    border-style: solid;
+    border-width: 1px;
+    height: 53.333px;
+    width: 131.875px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-nav a {
+    color: rgb(25, 28, 24);
+    font-family: "Source Sans Pro", sans-serif;  
+    letter-spacing: .01em;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#about-us {
+    background-color: #fbf5f2;
+}
+
+.about-us-title {
+    color: #0d3c00;
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+}
+
+.about-us-text, .about-us-blocks-text {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: #707070;
+}
+
+.about-us-item {
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro',sans-serif;
+    letter-spacing: .064em;
+    color: #131214;
+}
+
+.about-us-blocks {
+    background-color: white;
+}
+
+.about-us-blocks-title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro',sans-serif;
+    letter-spacing: 0;
+    color: #0d3c00;
+}
+
+.about-us-nav {
+    border-radius: 28px;
+    height: 53.333px;
+    width: 131.875px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-nav a {
+    color: rgb(25, 28, 24);
+    font-family: "Source Sans Pro", sans-serif;  
+    letter-spacing: .01em;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
