@@ -1,40 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+:root {
+    --main-color: #79a207;
+    --title-color: rgb(13, 60, 0);
+    --text-color-grey: #707070;
+    --text-color-black: rgb(25, 28, 24);
+    --about-us-color: #fbf5f2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+
 a {
     text-decoration: none; 
 }
 
+.header-nav img {
+    height: 34.354px;
+    font-weight: 162px;
+}
+
+
+@media (min-width: 500px) {
+    
+    #home {
+        display: flex;
+    }
+    
+    .header-nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    }
+
+.header-nav img:hover {
+    cursor: pointer;
+}
+
 .header-nav a {
     font-family: 'Lora', serif;
-    color: rgb(25, 28, 24);
+    color: var(--text-color-black)
     font-size: 17px;
+    display: block;
+}
+
+.plantland-block {
+    background-image: url('../img/mainpic.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .plantland-box {
-    background-image: url('../img/mainpic.webp');
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    word-wrap: break-word;
 }
+
 .green-small-title {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #79a207;
+    color: var(--main-color);
     font-weight: bold;
     letter-spacing: 2.8px;
 }
 
 .plantland-title {
     font-family: 'Lora', serif;
-    color: rgb(13, 60, 0);
+    color: var(--title-color);
     font-size: 48px;
 }
 
 .plantland-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
-    color: rgb(25,28,24);
+    color: var(--text-color-black);
 }
 
 .green-nav {
-    background-color: #79a207;
+    background-color: var(--main-color);
     border-radius: 28px;
     height: 53.333px;
     width: 131.875px;
@@ -54,7 +111,7 @@ a {
 
 .white-nav {
     border-radius: 28px;
-    border-color: rgb(25, 28, 24);
+    border-color: var(--text-color-black);
     border-style: solid;
     border-width: 1px;
     height: 53.333px;
@@ -66,7 +123,7 @@ a {
 }
 
 .white-nav a {
-    color: rgb(25, 28, 24);
+    color: var(--text-color-black);
     font-family: "Source Sans Pro", sans-serif;  
     letter-spacing: .01em;
     font-size: 11px;
@@ -74,11 +131,11 @@ a {
 }
 
 #about-us {
-    background-color: #fbf5f2;
+    background-color: var(--about-us-color);
 }
 
 .about-us-title {
-    color: #0d3c00;
+    color: var(--title-color);
     line-height: 1.2;
     font-family: Lora,serif;
     font-size: 42px;
@@ -90,7 +147,7 @@ a {
     font-family: 'Source Sans Pro',sans-serif;
     font-style: normal;
     letter-spacing: .05em;
-    color: #707070;
+    color: var(--text-color-grey);
 }
 
 .about-us-item {
@@ -98,7 +155,7 @@ a {
     line-height: 1.4;
     font-family: 'Source Sans Pro',sans-serif;
     letter-spacing: .064em;
-    color: #131214;
+    color: var(--text-color-black);
 }
 
 .about-us-blocks {
@@ -110,7 +167,7 @@ a {
     line-height: 1.4;
     font-family: 'Source Sans Pro',sans-serif;
     letter-spacing: 0;
-    color: #0d3c00;
+    color: var(--title-color);
 }
 
 .about-us-nav {
@@ -124,7 +181,7 @@ a {
 }
 
 .about-us-nav a {
-    color: rgb(25, 28, 24);
+    color: var(--text-color-black);
     font-family: "Source Sans Pro", sans-serif;  
     letter-spacing: .01em;
     font-size: 11px;
