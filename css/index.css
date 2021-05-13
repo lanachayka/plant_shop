@@ -181,13 +181,8 @@ a {
     }
 
     .plantland-box {
-        max-width: 400px;
+        max-width: 370px;
     }
-}
-
-@media (min-width:500px)
-.plantland-box {
-    max-width: 200px;
 }
 
 /* #about-us {
