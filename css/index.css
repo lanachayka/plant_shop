@@ -228,6 +228,7 @@ a {
     color: var(--text-color);
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-left: 20px;
 }
 
 @media (min-width:500px) {
@@ -238,10 +239,33 @@ a {
 }
 
 @media (min-width:850px) {
-    
+
+ .about-us-title {
+     max-width: 380px;
+ } 
+ 
+ .about-us-text {
+    max-width: 380px;
+ }
+
+ .about-us-list {
+    max-width: 380px;
+ }
+
+ .about-us-description {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+ }
+
 }
 
-
+.about-us-blocks {
+    background-color: var(--background-color);
+    max-width: 980px;
+    margin: auto;
+    padding-left: 25px;
+}
 
 .about-us-blocks-title {
     font-size: 24px;
