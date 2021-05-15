@@ -491,7 +491,7 @@ a {
 @media (min-width:600px) {
     .faq-block {
         display: grid;
-        grid-template-columns: 1fr 1fr;;
+        grid-template-columns: 1fr 1fr;
     }
 
     .faq-img {
