@@ -335,14 +335,34 @@ a {
 }
 
 #plants {
-    background-color: var(--background-color);
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: 980px;
+    margin: auto;
 }
 
 .plants-caption {
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-items: center;
     justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: 980px;
+    margin: auto;
+}
+
+.plants-offers {
     max-width: 980px;
     margin: auto;
 }
@@ -361,19 +381,6 @@ a {
     font-size: 18px;
     color: var(--text-color);
     padding-bottom: 30px;
-}
-
-.plants-offers {
-    padding: 25px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    max-width: 980px;
-    margin: auto;
 }
 
 .plants-offer-title {
@@ -440,7 +447,11 @@ a {
     .plants-offers {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-self: stretch;
+    }
+
+    .plants-offer-box {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .plants-offer-text {
@@ -450,15 +461,20 @@ a {
 }
 
 @media (min-width:850px) {
+    #plants {
+        padding: 0;
+    }
+
     .plants-offers {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        max-width: 980px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .plants-offer-text {
         max-width: 240px;
-        min-height: 210px;
+        min-height: 240px;
     }
     .plants-offer-ornamental {
         width: 240px;
