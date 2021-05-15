@@ -261,10 +261,25 @@ a {
 }
 
 .about-us-blocks {
-    background-color: var(--background-color);
     max-width: 980px;
     margin: auto;
     padding-left: 25px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-us-block {
+    background-color: var(--background-color);
+    border-top-style: solid;
+    border-top-color: var(--main-color);
+    border-top-width: 3px;
+    max-width: 250px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .about-us-blocks-title {
@@ -291,6 +306,183 @@ a {
     letter-spacing: .01em;
     font-size: 11px;
     font-weight: bold;
+}
+
+@media (min-width:600px) {
+    .about-us-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-us-block {
+        min-height: 400px;
+        max-width: 150px;
+    }
+}
+
+@media (min-width:850px) {
+    .about-us-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .about-us-block {
+        min-height: 400px;
+        max-width: 150px;
+    }
+}
+
+.about-us-end {
+    width: 100%;
+}
+
+#plants {
+    background-color: var(--background-color);
+}
+
+.plants-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: auto;
+}
+
+.plants-title {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.plants-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    color: var(--text-color);
+    padding-bottom: 30px;
+}
+
+.plants-offers {
+    max-width: 980px;
+    margin: auto;
+}
+
+.plants-offer-box {
+    padding-left: 25px;
+}
+
+.plants-offer-title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro',sans-serif;
+    letter-spacing: 0;
+    color: var(--title-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plants-offer-text {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+}
+
+.plants-offer-ornamental {
+    background-image: url("../img/small-ornamental.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-trees {
+    background-image: url("../img/indoor-trees.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-florarium {
+    background-image: url("../img/florarium.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-big-ornamental {
+    background-image: url("../img/big-ornamental.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+@media (min-width:600px) {
+    .plants-offers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: stretch;
+    }
+
+    .plants-offer-box {
+        
+    }
+
+    .plants-offer-text {
+        max-width: 280px;
+        min-height: 170px;
+    }
+}
+
+@media (min-width:850px) {
+    .plants-offers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .plants-offer-box {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .plants-offer-text {
+        max-width: 240px;
+        min-height: 170px;
+    }
+    .plants-offer-ornamental {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-trees {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-florarium {
+        width: 240px;
+        height: 360px;
+    }
+    .plants-offer-big-ornamental {
+        width: 240px;
+        height: 360px;
+    }
 }
 
 
