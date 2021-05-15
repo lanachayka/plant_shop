@@ -211,7 +211,7 @@ a {
     padding-bottom: 30px;
 }
 
-.about-us-text, .about-us-blocks-text {
+.about-us-text {
     font-size: 17px;
     line-height: 1.5;
     font-family: 'Source Sans Pro',sans-serif;
@@ -260,76 +260,6 @@ a {
 
 }
 
-.about-us-blocks {
-    max-width: 980px;
-    margin: auto;
-    padding-left: 25px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.about-us-block {
-    background-color: var(--background-color);
-    border-top-style: solid;
-    border-top-color: var(--main-color);
-    border-top-width: 3px;
-    max-width: 250px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.about-us-blocks-title {
-    font-size: 24px;
-    line-height: 1.4;
-    font-family: 'Source Sans Pro',sans-serif;
-    letter-spacing: 0;
-    color: var(--title-color);
-}
-
-.about-us-nav {
-    border-radius: 28px;
-    height: 53.333px;
-    width: 131.875px;
-    cursor: pointer;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-us-nav a {
-    color: var(--text-color);
-    font-family: "Source Sans Pro", sans-serif;  
-    letter-spacing: .01em;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-@media (min-width:600px) {
-    .about-us-blocks {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .about-us-block {
-        min-height: 400px;
-        max-width: 150px;
-    }
-}
-
-@media (min-width:850px) {
-    .about-us-blocks {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    .about-us-block {
-        min-height: 400px;
-        max-width: 150px;
-    }
-}
-
 .about-us-end {
     width: 100%;
 }
@@ -363,6 +293,15 @@ a {
 }
 
 .plants-offers {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     max-width: 980px;
     margin: auto;
 }
@@ -472,9 +411,12 @@ a {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    .plants-offer-title {
+        min-height: 65px;
+    }
     .plants-offer-text {
-        max-width: 240px;
-        min-height: 240px;
+        max-width: 220px;
+        min-height: 300px;
     }
     .plants-offer-ornamental {
         width: 240px;
@@ -500,10 +442,61 @@ a {
     max-width: 980px;
     margin: auto;
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .faq-img {
-    max-width: 280px;
+    max-width: 260px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.faq-title {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.faq-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--text-color);
+    padding-bottom: 30px;
+}
+
+.accordion-button {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 24px;
+}
+
+.accordion-body {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: var(--text-color-light);
+}
+
+#faq-nav {
+    margin-top: 30px;
+}
+
+@media (min-width:600px) {
+    .faq-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+
+    .faq-img {
+        min-width: 100%;
+    }
 }
 
 
