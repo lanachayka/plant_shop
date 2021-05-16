@@ -16,7 +16,7 @@
     padding: 0px;
 }
 
-.conteiner {
+.header-conteiner {
     max-width: 980px;
     margin: auto;
     padding-left: 25px;
@@ -197,6 +197,18 @@ a {
     padding-bottom: 90px;
 }
 
+.about-us-description {
+    max-width: 980px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+.about-us-img-box {
+    max-width: 980px;
+    margin: auto;
+    padding-left: 25px;
+}
+
 .about-us-picture {
     max-width: 250px;
     padding-top: 20px;
@@ -235,7 +247,7 @@ a {
 @media (min-width:500px) {
     
     .about-us-picture {
-        max-width: 500px;
+        max-width: 450px;
     }
 }
 
@@ -257,7 +269,12 @@ a {
     display: flex;
     flex: 1;
     flex-direction: row;
+    justify-content: center;
  }
+
+ .about-us-picture {
+    max-width: 600px;
+}
 
 }
 
@@ -842,6 +859,7 @@ a {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-left: 30px;
     }
 }
 
