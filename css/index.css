@@ -8,6 +8,7 @@
     --text-color: rgb(25, 28, 24);
     --about-us-color: #fbf5f2;
     --background-color: white;
+    --accent-text-color: rgb(236,210,160);
 }
 
 * {
@@ -437,69 +438,21 @@ a {
     }
 }
 
-.faq-block {
-   margin:auto;
-   max-width: 980px;
-   padding-left: 25px;
-   padding-right: 25px;
-}
-
-.faq-img {
-    max-width: 260px;
-    margin-top: 30px;
-    margin-bottom: 90px;
-}
-
-.faq-title {
-    color: var(--title-color);
-    line-height: 1.2;
-    font-family: Lora,serif;
-    font-size: 42px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.faq-text {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-    color: var(--text-color);
-    padding-bottom: 30px;
-}
-
-.accordion-button {
-    color: var(--title-color);
-    line-height: 1.2;
-    font-family: Lora,serif;
-    font-size: 24px;
-}
-
-.accordion-body {
-    font-size: 17px;
-    line-height: 1.5;
-    font-family: 'Source Sans Pro',sans-serif;
-    font-style: normal;
-    letter-spacing: .05em;
-    color: var(--text-color-light);
-}
-
-#faq-nav {
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-@media (min-width:600px) {
-    .faq-block {
-    max-width: 700px;
-    }
-
-    .faq-img {
-        max-width: 400px;
-        margin-left: 140px;
-    }
-}
-
 #pick-of-the-month {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: 980px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.pick-of-the-month-title-conteiner {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -507,6 +460,22 @@ a {
     align-items: center;
     align-content: center;
     max-width: 980px;
+}
+
+.pick-of-the-month-title {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.pick-of-the-month-boxes {
+    max-width: 980px;
+    margin-top: 30px;
 }
 
 .pick-of-the-month-box {
@@ -558,23 +527,74 @@ a {
 @media (min-width:850px) {
 
     .pick-of-the-month-boxes {
-        display: flex;
-        flex-direction: row;
-        max-width: 980px;
-    }
-
-    .pick-of-the-month-box {
-        max-width: 980px;
-        margin-right: 10px;
-        margin-left: 10px;
+       padding: 0;
+       margin: 0;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
     }
 
     .pick-of-the-month-box img{
-        max-width: 230px;
+        max-width: 240px;
         min-height: 240px;
     }
 }
 
+#green-block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    background-color: var(--title-color);
+    background-image: url('../img/backgroung-texture.webp');
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: hue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.green-block-title {
+   color: var(--accent-text-color);
+   font-size: 74px;
+   line-height: 1.1;
+   font-family: 'Lora', serif;
+   margin-top: 30px;
+}
+
+.green-block-text {
+    color: var(--background-color);
+    font-size: 14px;
+    line-height: 1.43;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+@media (min-width:600px) {
+    #green-block {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .green-block-box {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
 
 
 
