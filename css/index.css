@@ -764,5 +764,118 @@ a {
 
 }
 
+#testimonials {
+    max-width: 980px;
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 25px;
+}
 
+.testimonials-title {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 
+.testimonials-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--text-color);
+    padding-bottom: 30px;
+}
+
+.staff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.staff-photo {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.staff-name {
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro',sans-serif;
+    word-wrap: break-word;
+    color: var(--title-color);
+}
+
+.staff-about {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+}
+
+.testimonials-img {
+    width: 100%;
+}
+
+@media (min-width:850px) {
+    #testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-end: var(--main-color);
+    }
+    .testimonials-img {
+       visibility: hidden;
+    }
+    .staff-photo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .testimonials-img-box {
+        background-image: url('../img/testimonals.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.green-block-box-tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+}
+
+.green-block-title-tel {
+    color: var(--background-color);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 46px;
+    line-height: 1.1;
+    font-family: 'Lora', serif;
+    padding-top: 50px;
+}
+
+.green-block-text-tel {
+    color: var(--background-color);
+    font-size: 26px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-family: 'Lora', serif;
+}
+
+.green-block-tel {
+    text-decoration: none;
+    color: var(--accent-text-color);
+    font-size: 26px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-family: 'Lora', serif;
+}
