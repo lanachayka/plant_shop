@@ -438,6 +438,66 @@ a {
     }
 }
 
+.faq-block {
+    margin:auto;
+    max-width: 980px;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ 
+ .faq-img {
+     max-width: 260px;
+     margin-top: 30px;
+     margin-bottom: 90px;
+ }
+ 
+ .faq-title {   
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+ 
+ .faq-text {
+     font-family: "Source Sans Pro", sans-serif;
+     font-size: 17px;
+     line-height: 1.5;
+     color: var(--text-color);
+     padding-bottom: 30px;
+ }
+ 
+ .accordion-button {
+     color: var(--title-color);
+     line-height: 1.2;
+     font-family: Lora,serif;
+     font-size: 24px;
+ }
+ 
+ .accordion-body {
+     font-size: 17px;
+     line-height: 1.5;
+     font-family: 'Source Sans Pro',sans-serif;
+     font-style: normal;
+     letter-spacing: .05em;
+     color: var(--text-color-light);
+ }
+ 
+ #faq-nav {
+     margin-top: 30px;
+     margin-bottom: 100px;
+ }
+ 
+ @media (min-width:600px) {
+     
+    .faq-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 980px;
+     }
+ 
+     .faq-img {
+        max-width: 100%
+     }
+ }
+
 #pick-of-the-month {
     display: flex;
     flex-direction: column;
@@ -547,16 +607,17 @@ a {
     margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin: 0;
     background-color: var(--title-color);
     background-image: url('../img/backgroung-texture.webp');
-    background-size: cover;
-    width: 100%;
     background-blend-mode: hue;
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
     align-items: center;
     align-content: center;
+    align-self: center;
 }
 
 .green-block-title {
