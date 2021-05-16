@@ -488,22 +488,15 @@ a {
     margin-top: 30px;
 }
 
-@media (min-width:850px) {
+@media (min-width:600px) {
     .faq-block {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    .faq-img-box {
-        max-width: 200px;
-    }
-
+    
     .faq-img {
         max-width: 100%;
-        margin: 0;
-        padding: 0;
     }
-    
 }
 
 #pick-of-the-month {
