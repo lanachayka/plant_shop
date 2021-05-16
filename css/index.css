@@ -265,7 +265,6 @@ a {
 }
 
 #plants {
-    padding-left: 25px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -292,7 +291,7 @@ a {
     margin: auto;
 }
 
-.plants-offers {
+.plants-offer-box {
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -439,10 +438,10 @@ a {
 }
 
 .faq-block {
-    max-width: 980px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+   margin:auto;
+   max-width: 980px;
+   padding-left: 25px;
+   padding-right: 25px;
 }
 
 .faq-img {
@@ -486,31 +485,28 @@ a {
 
 #faq-nav {
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 @media (min-width:600px) {
     .faq-block {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    max-width: 700px;
     }
-    
+
     .faq-img {
-        max-width: 100%;
+        max-width: 400px;
+        margin-left: 140px;
     }
 }
 
 #pick-of-the-month {
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    justify-self: center;
     align-items: center;
     align-content: center;
-    align-self: center;
     max-width: 980px;
-    margin-top: 100px;
 }
 
 .pick-of-the-month-box {
@@ -551,12 +547,6 @@ a {
     .pick-of-the-month-boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        justify-items: center;
-        align-content: space-around;
-        align-items: center;
-        max-width: 980px;
-        margin: auto;
     }
 
     .pick-of-the-month-box {
@@ -566,15 +556,22 @@ a {
 }
 
 @media (min-width:850px) {
+
     .pick-of-the-month-boxes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: center;
-        justify-items: center;
-        align-content: space-around;
-        align-items: center;
+        display: flex;
+        flex-direction: row;
         max-width: 980px;
-        margin: auto;
+    }
+
+    .pick-of-the-month-box {
+        max-width: 980px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .pick-of-the-month-box img{
+        max-width: 230px;
+        min-height: 240px;
     }
 }
 
