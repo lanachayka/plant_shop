@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --main-color: #79a207;
+    --title-color: rgb(13, 60, 0);
+    --text-color-light: #707070;
+    --text-color: rgb(25, 28, 24);
+    --about-us-color: #fbf5f2;
+    --background-color: white;
+    --accent-text-color: rgb(236,210,160);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.store-titles {
+    padding-left: 25px;
+    max-width: 980px;
+    margin: auto;
+}
+
+.store-title {
+    font-size: 26px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.store-title-products {
+    font-size: 26px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 50px;
+}
+
+.green-nav {
+    background-color: var(--main-color);
+    border-radius: 28px;
+    height: 53.333px;
+    width: 131.875px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-nav a {
+    color: var(--background-color);
+    font-family: "Source Sans Pro", sans-serif;  
+    letter-spacing: .01em;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#pick-of-the-month {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: 980px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.pick-of-the-month-title-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 980px;
+}
+
+.pick-of-the-month-title {
+    color: var(--title-color);
+    line-height: 1.2;
+    font-family: Lora,serif;
+    font-size: 42px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.pick-of-the-month-boxes {
+    max-width: 980px;
+    margin-top: 30px;
+}
+
+.pick-of-the-month-box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.pick-of-the-month-box img{
+    max-width: 300px;
+}
+
+.pick-of-the-month-name {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.pick-of-the-month-price {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+@media (min-width:600px) {
+    .pick-of-the-month-boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pick-of-the-month-box {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width:850px) {
+
+    .pick-of-the-month-boxes {
+       padding: 0;
+       margin: 0;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+    }
+
+    .pick-of-the-month-box img{
+        max-width: 240px;
+        min-height: 240px;
+    }
+}
+
+footer {
+    background-color: var(--title-color);
+}
+
+.footer-nav {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.footer-menu {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-nav img {
+    display: block;
+    max-width: 162px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-nav img:hover {
+   cursor: pointer;
+}
+
+.footer-nav a {
+    font-family: 'Lora', serif;
+    color: var(--background-color);
+    font-size: 17px;
+    display: block;
+    padding: 10px;
+}
+
+.footer-nav a:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+@media (min-width:850px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 21px;
+        padding-left: 150px;
+    }
+}
