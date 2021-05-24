@@ -717,6 +717,7 @@ a {
     align-items: center;
     align-content: center;
     max-width: 980px;
+    margin: auto;
 }
 
 .pricing-box {
@@ -765,18 +766,20 @@ a {
     }
 
     .pricing-boxes {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-content: center;
-       align-items: center;
-       max-width: 980px;
-       margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 980px;
+        margin: auto;
     }
 
     .pricing-box {
         margin-left: 30px;
         margin-right: 30px;
+        min-width: 200px;
+        min-height: 300px;
     }
 
 }
