@@ -1,6 +1,7 @@
 (function () {
+    'use strict'
     const plantsOffers = document.querySelector(".plants-offers");
-    function changeFlowers(flowersType = "changeInd") {
+    function changeFlowers(flowersType) {
         plantsOffers.innerHTML = "";
         if (flowersType === "changeInd") {
           plantsOffers.innerHTML += `
@@ -51,18 +52,18 @@
       }
       
       const btnInd = document.querySelector(".ind");
-      btnInd.addEventListener("click", changeFlowersInd);
+      btnInd.addEventListener("click", changeInd);
       
-      function changeFlowersInd() {
+      function changeInd() {
         changeFlowers("changeInd");
       }
       
       const btnOut = document.querySelector(".out");
-      btnOut.addEventListener("click", changeFlowersOut);
+      btnOut.addEventListener("click", changeOut);
       
-      function changeFlowersOut() {
+      function changeOut() {
         changeFlowers("changeOut");
       }
 
-});
+}) ();
 
