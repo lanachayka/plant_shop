@@ -309,6 +309,24 @@ a {
     margin: auto;
 }
 
+.plants-button {
+    border-style: none;
+    background-color: var(--background-color);
+    font-size: 17px;
+    line-height: 1.43;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.plants-button:hover {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+
+
 .plants-offer-box {
     padding: 0;
     display: flex;
@@ -345,8 +363,7 @@ a {
     font-family: 'Source Sans Pro',sans-serif;
     letter-spacing: 0;
     color: var(--title-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .plants-offer-text {
@@ -356,7 +373,6 @@ a {
     font-style: normal;
     letter-spacing: .05em;
     color: var(--text-color-light);
-    margin-bottom: 30px;
 }
 
 .plants-offer-ornamental {
@@ -398,6 +414,47 @@ a {
     height: 400px;
     border-radius: 1%;
 }
+
+.plants-offer-outdoor-flowers {
+    background-image: url("../img/outdoor-flowers.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-succulents {
+    background-image: url("../img/succulents.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-moss {
+    background-image: url("../img/decorative-moss.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
+.plants-offer-conifers {
+    background-image: url("../img/decorative-conifers.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 400px;
+    border-radius: 1%;
+}
+
 
 @media (min-width:600px) {
     .plants-offers {
@@ -450,6 +507,26 @@ a {
         height: 360px;
     }
     .plants-offer-big-ornamental {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-outdoor-flowers {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-succulents {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-moss {
+        width: 240px;
+        height: 360px;
+    }
+
+    .plants-offer-conifers {
         width: 240px;
         height: 360px;
     }
@@ -626,6 +703,9 @@ a {
     background-color: var(--title-color);
     background-image: url('../img/backgroung-texture.webp');
     background-blend-mode: hue;
+}
+
+.green-block-boxes {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -634,6 +714,8 @@ a {
     align-items: center;
     align-content: center;
     align-self: center;
+    max-width: 980px;
+    margin: auto;
 }
 
 .green-block-title {
@@ -655,7 +737,7 @@ a {
 }
 
 @media (min-width:600px) {
-    #green-block {
+    .green-block-boxes {
         display: flex;
         flex-direction: row;
         justify-items: center;
@@ -667,10 +749,16 @@ a {
     }
 
     .green-block-box {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
+}
 
+@media (min-width:850px) {
+    .green-block-box {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
 
 #pricing {
