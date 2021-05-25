@@ -1,5 +1,4 @@
 (function () {
-    'use strict'
     const plantsOffers = document.querySelector(".plants-offers");
     function changeFlowers(flowersType) {
         plantsOffers.innerHTML = "";
