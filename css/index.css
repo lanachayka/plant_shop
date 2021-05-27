@@ -69,11 +69,11 @@ a {
     background-color: var(--text-color);
 }
 
-#second, #third {
+.two, .three {
     top: 18px;
 }
 
-#fourth {
+.four {
     top: 28px;
 }
 
@@ -118,22 +118,22 @@ a {
     font-size: 17px;
 }
 
-#check-menu:checked ~ #first {
+#check-menu:checked ~ .one{
     display: none;
     transition: 0.5s all;
 }
 
-#check-menu:checked ~ #second {
+#check-menu:checked ~ .two{
     transform: rotate(45deg);
     transition: 0.5s all;
 }
 
-#check-menu:checked ~ #third {
+#check-menu:checked ~ .three{
     transform: rotate(-45deg);
     transition: 0.5s all;
 }
 
-#check-menu:checked ~ #fourth {
+#check-menu:checked ~ .four{
     display: none;
     transition: 0.5s all;
 }
