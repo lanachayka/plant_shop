@@ -118,26 +118,6 @@ a {
     font-size: 17px;
 }
 
-#check-menu:checked ~ .one{
-    display: none;
-    transition: 0.5s all;
-}
-
-#check-menu:checked ~ .two{
-    transform: rotate(45deg);
-    transition: 0.5s all;
-}
-
-#check-menu:checked ~ .three{
-    transform: rotate(-45deg);
-    transition: 0.5s all;
-}
-
-#check-menu:checked ~ .four{
-    display: none;
-    transition: 0.5s all;
-}
-
 @media (min-width:850px) {
 
     .wrapper label {
