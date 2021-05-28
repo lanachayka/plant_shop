@@ -128,9 +128,9 @@ a {
         flex-wrap: wrap;
         font-size: 17px;
         padding-left: 300px;
-        max-width: 680px;
+        max-width: 640px;
         margin: auto;
-        margin-bottom: 17px;
+        margin-bottom: 20px;
     } 
     
 }
@@ -139,6 +139,7 @@ a {
     max-width: 980px;
     margin: auto;
     padding-left: 25px;
+    padding-top: 50px;
 }
 
 .shop-small-title {
