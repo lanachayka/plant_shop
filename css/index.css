@@ -1214,6 +1214,7 @@ footer {
     max-width: 162px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-left: 30px; 
 }
 
 .footer-nav img:hover {
