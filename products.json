@@ -30,5 +30,17 @@
         "price": 45,
         "description": "This plant has chosen the tropical rainforests of Brazil and Guiana. This climbing vine with elliptical or oblong, lanceolate, pointed leaves at the ends makes an indelible impression even on those who have nothing to do with floriculture. Its leaves are about 20 cm long, while the width does not exceed 6 cm.",
         "care": "A damp greenhouse or florarium is the most suitable place for this species. Under comfortable conditions, the leaves gain strength and become large, and the distance of internodes decreases."
+    },
+
+    {
+        "id":"4",
+        "category": "evergreens",
+        "img": "img/plants_of_the_month4.jfif",
+        "name": "Monstera Obliqua",
+        "code": "Product code 4",
+        "price": 36,
+        "description": "It is a perennial plant with rosettes of 6-8 leaves in length. The leaves are hard, sword-like, up to 1 m long, dark green with light transverse wavy stripes, most brightly colored in young leaves. There are whitish-green flowers, collected in a cluster, with a strong aroma. Sansevieria Trifasciata blooms in spring and autumn.",
+        "care": "Sansevieria will not die in low light conditions but you should not constantly keep it in the back of the room. It needs a lot of light, including sunlight."
     }
+
 ]
