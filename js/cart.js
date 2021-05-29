@@ -19,15 +19,11 @@ class Cart {
     }
     async renderCart() {
         let total = 0;
-        let cartDomSting = `<div class="container">
-        <div class="row"> 
-        </div>
-        </div>
-        `;
+        let cartDomSting = document.querySelector('.container');
         for (const id in this.cart) {
-            const product = await thss.ProductService.getProductById(id);
+            const product = await this.ProductService.getProductById(id);
             total += product.price * this.cart[id];
-            cartDomSting += `<div class="row data-id="${id}"> 
+            cartDomSting.innerHTML = `<div class="row" data-id="${id}"> 
             <img src="${product.img}" alt="${product.name}">
             <div class="cart-product-title">${product.name}<div>
             <div class="cart-product-price">${product.price}<div>
@@ -36,10 +32,10 @@ class Cart {
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm minus">-</button></div>
             </div>`;
         }
-        cartDomSting += `
+        cartDomSting.innerHTML += `
         <div class="cart-row">
-        <div class = "cart-title">TOTAL<div>
-        <div class = "cart-title">$${total.toFixed(2)}<div>
+        <div class="cart-title">TOTAL<div>
+        <div class="cart-title">$${total.toFixed(2)}<div>
         </div>
         `;
         this.cartContainer.querySelector('.cart-product-list-container').innerHTML = cartDomSting;
