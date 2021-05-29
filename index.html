@@ -327,6 +327,38 @@
                 </form>
             </div>
         </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <img class="btn-primary-img" src="img/shopping-bag.svg" alt="Shopping Bag">
+         </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="cart-title">Products</p>
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="form-box">
+                        <p class="cart-title">PLACE AN ORDER</p>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email: <span>*</span></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
     <footer>
         <nav class="footer-nav">
