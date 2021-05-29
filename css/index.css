@@ -1298,4 +1298,13 @@ footer {
     color: red;
 }
 
+.btn-secondary {
+    background-color: var(--main-color);
+    border-radius: 28px;
+    border-color: var(--main-color);
+    font-family: "Source Sans Pro", sans-serif;  
+    letter-spacing: .01em;
+    font-size: 17px;
+    font-weight: bold;
+}
 
