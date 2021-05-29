@@ -47,7 +47,7 @@
     <p class="pick-of-the-month-name">Floral Moss</p>
     <p class="pick-of-the-month-price">$33,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="1" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>
 <div class="pick-of-the-month-box">
@@ -55,7 +55,7 @@
     <p class="pick-of-the-month-name">Areca Palm</p>
     <p class="pick-of-the-month-price">$22,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="2" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>
 <div class="pick-of-the-month-box">
@@ -63,7 +63,7 @@
     <p class="pick-of-the-month-name">Monstera Obliqua</p>
     <p class="pick-of-the-month-price">$45,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="3" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>
 <div class="pick-of-the-month-box">
@@ -71,7 +71,7 @@
     <p class="pick-of-the-month-name">Sansevieria Trifasciata</p>
     <p class="pick-of-the-month-price">$36,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="4" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>`
     const succulentsHTML = `
