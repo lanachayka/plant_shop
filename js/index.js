@@ -159,7 +159,7 @@
         changeFlowers("changeSucc");
       }
 
-      new ProductList(new Cart());
+      new Cart;
 
 }) ();
 
