@@ -35,6 +35,7 @@ class Cart {
         <div class="cart-title">$${total.toFixed(2)}</div>
         </div>`;
         this.cartContainer.querySelector('.cart-product-list-container').innerHTML = cartDomSting;
+        this.saveCart();
         this.cartContainer
             .querySelectorAll('.plus')
             .forEach(el =>
