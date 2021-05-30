@@ -21,7 +21,6 @@ class Cart {
         let total = 0;
         let cartDomSting = '<div></div>';
         for (const id in this.cart) {
-            const productService = new ProductsService();
             const product = await this.productService.getProductById(id);
             total += product.price * this.cart[id];
             cartDomSting += `<div class="cart-row" data-id="${id}"> 
