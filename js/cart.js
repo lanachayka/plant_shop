@@ -1,6 +1,6 @@
 class Cart {
     constructor () {
-        this.productService = new ProductService();
+        this.productService = new ProductsService();
         this.cartContainer = document.querySelector('#cartModal');
         this.cart = JSON.parse(localStorage['cart'] || '{}');
         this.addEventListeners();
@@ -10,34 +10,29 @@ class Cart {
         document
         .querySelector('.openCartLink')
         .addEventListener('click', () => this.renderCart());
-        this.cartContainer
-        .querySelector('.order')
-        .addEventListener('click', ev => this.order(ev));
     }
     saveCart() {
         localStorage['cart'] = JSON.stringify(this.cart);
     }
     async renderCart() {
         let total = 0;
-        let cartDomSting = document.querySelector('.container');
+        let cartDomSting = '<div></div>';
         for (const id in this.cart) {
-            const product = await this.ProductService.getProductById(id);
+            const product = await this.productService.getProductById(id);
             total += product.price * this.cart[id];
-            cartDomSting.innerHTML = `<div class="row" data-id="${id}"> 
+            cartDomSting += `<div class="cart-row" data-id="${id}"> 
             <img src="${product.img}" alt="${product.name}">
-            <div class="cart-product-title">${product.name}<div>
-            <div class="cart-product-price">${product.price}<div>
+            <div class="cart-product-title">${product.name}</div>
+            <div class="cart-product-price">${product.price}</div>
             <div>${this.cart[id]}</div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm plus">+</button></div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm minus">-</button></div>
             </div>`;
         }
-        cartDomSting.innerHTML += `
-        <div class="cart-row">
-        <div class="cart-title">TOTAL<div>
-        <div class="cart-title">$${total.toFixed(2)}<div>
-        </div>
-        `;
+        cartDomSting += `<div class="cart-row">
+        <div class="cart-title">TOTAL</div>
+        <div class="cart-title">$${total.toFixed(2)}</div>
+        </div>`;
         this.cartContainer.querySelector('.cart-product-list-container').innerHTML = cartDomSting;
         this.cartContainer
             .querySelectorAll('.plus')

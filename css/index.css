@@ -1318,6 +1318,7 @@ footer {
     letter-spacing: .05em;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--text-color);
+    margin-right: 10px;
 }
 
 .cart-product-title {
@@ -1326,9 +1327,20 @@ footer {
     letter-spacing: .064em;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--text-color);
+    margin-right: 10px;
+}
+
+.cart-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .cart-row img {
-    width: 20px;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 20px;
 }
+
 
