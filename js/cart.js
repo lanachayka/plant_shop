@@ -24,7 +24,7 @@ class Cart {
             cartDomSting += `<div class="cart-row" data-id="${id}"> 
             <img src="${product.img}" alt="${product.name}">
             <div class="cart-title">${product.name}</div>
-            <div class="cart-title">${product.price}</div>
+            <div class="cart-title">$${product.price}</div>
             <div class="cart-title">${this.cart[id]}</div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm plus">+</button></div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm minus">-</button></div>
@@ -51,7 +51,7 @@ class Cart {
     changeQuantity(ev, operation) {
         const button = ev.target;
         const id = button.dataset.id;
-        operation.call(this.id);
+        operation.call(this, id);
         this.renderCart();
     }
     addProduct(id) {
@@ -61,18 +61,16 @@ class Cart {
     }
     deleteProduct(id) {
         if (this.cart[id] > 1) {
-            this.cart[id] -= 1;
+        this.cart[id] -= 1;
         } else {
-            delete this.cart[id];
+        delete this.cart[id];
         }
         this.saveCart();
         this.updateBadge();
     }
     async updateBadge() {
-        const count = await this.cartLengthAndCost();
-        if (count > 0) {
-            document.querySelector('.cart-badge').innerHTML=`${count}`;
-        } 
+        const {count, cost } = await this.cartLengthAndCost(); 
+        document.querySelector('.cart-badge').innerText = `${count}`;
     }
     async cartLengthAndCost() {
         let count = 0;
@@ -88,5 +86,3 @@ class Cart {
         };
     }
 }
-
-

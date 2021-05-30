@@ -160,3 +160,5 @@
       }
 }) ();
 
+new ProductList(new Cart());
+

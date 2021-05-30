@@ -1311,7 +1311,7 @@ footer {
 
 .cart-badge {
     color: var(--text-color);
-    background-color: none;
+    background-color: var(--main-color);
     border-radius: 50%;
     width: 25px;
     height: 25px;
