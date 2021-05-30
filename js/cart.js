@@ -25,7 +25,7 @@ class Cart {
             <img src="${product.img}" alt="${product.name}">
             <div class="cart-title">${product.name}</div>
             <div class="cart-title">${product.price}</div>
-            <div>${this.cart[id]}</div>
+            <div class="cart-title">${this.cart[id]}</div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm plus">+</button></div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm minus">-</button></div>
             </div>`;
