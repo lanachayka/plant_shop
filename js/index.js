@@ -80,7 +80,7 @@
     <p class="pick-of-the-month-name">Graptosedum Darley</p>
     <p class="pick-of-the-month-price">$32,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="5" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>
 <div class="pick-of-the-month-box">
@@ -88,7 +88,7 @@
     <p class="pick-of-the-month-name">Haworthia Venosa</p>
     <p class="pick-of-the-month-price">$48,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="6" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>
 <div class="pick-of-the-month-box">
@@ -96,15 +96,15 @@
     <p class="pick-of-the-month-name">Silver Torch</p>
     <p class="pick-of-the-month-price">$24,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
-    </nav>
+    <a data-id="7" class="openCartLink" href="#cartModal">ORDER NOW</a>
+</nav>
 </div>
 <div class="pick-of-the-month-box">
     <a href="notocactus-roseoluteus.html"><img src="img/roseoluteus.png" alt="Notocactus Roseoluteus"></a>
     <p class="pick-of-the-month-name">Notocactus Roseoluteus</p>
     <p class="pick-of-the-month-price">$33,00</p>
     <nav class="green-nav">
-        <a href="#cart">ORDER NOW</a>
+        <a data-id="8" class="openCartLink" href="#cartModal">ORDER NOW</a>
     </nav>
 </div>`
     const plantsOffers = document.querySelector(".plants-offers");
