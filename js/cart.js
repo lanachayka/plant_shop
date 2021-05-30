@@ -10,6 +10,9 @@ class Cart {
         document
         .querySelector('.openCartLink')
         .addEventListener('click', () => this.renderCart());
+        this.cartContainer
+        .querySelector('.order')
+        .addEventListener('click', ev => this.order(ev));
     }
     saveCart() {
         localStorage['cart'] = JSON.stringify(this.cart);
@@ -70,6 +73,7 @@ class Cart {
     }
     async updateBadge() {
         const {count, cost } = await this.cartLengthAndCost(); 
+        document.querySelector('.cart-badge').classList.remove('d-none'); 
         document.querySelector('.cart-badge').innerText = `${count}`;
     }
     async cartLengthAndCost() {
@@ -85,4 +89,45 @@ class Cart {
             count, cost
         };
     }
+    async order(ev) {
+        if ((await this.cartLengthAndCost()).count === 0) {
+          window.showAlert('Please choose products to order', false);
+          return;
+        }    
+        const form = this.cartContainer.querySelector('.form-box');
+        if (form.checkValidity()) {
+          ev.preventDefault();
+          fetch('order', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              clientName: document.querySelector('#nameFormControlInput1').value,
+              clientEmail: document.querySelector('#emailFormControlInput2').value,
+              clientPhone: document.querySelector('#phoneFormControlInput3').value,
+              cart: this.cart
+            })
+          })
+            .then(response => {
+              if (response.status === 200) {
+                return response.text();
+              } else {
+                throw new Error('Cannot send form');
+              }
+            })
+            .then(responseText => {
+              form.reset();
+              this.cart = {};
+              this.saveCart();
+              this.updateBadge();
+              this.renderCart();
+              window.showAlert('Thank you! ' + responseText);
+              this.cartContainer.querySelector('.close-btn').click();
+            })
+            .catch(error => showAlert('There is an error: ' + error, false));
+        } else {
+          window.showAlert('Please fill form correctly', false);
+        }
+      }
 }

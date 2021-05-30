@@ -1272,6 +1272,10 @@ footer {
     border-color: var(--about-us-color);
 }
 
+btn-primary:checked ~ btn-primary {
+    background-color: var(--main-color);
+}
+
 @media (min-width:850px) {
     .btn-primary {
         right: 130px; 
