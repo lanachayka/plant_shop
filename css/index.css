@@ -1292,6 +1292,7 @@ footer {
     letter-spacing: .064em;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--text-color);
+    margin-right: 5px;
 }
 
 .mb-3 span {
