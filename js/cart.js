@@ -18,6 +18,7 @@ class Cart {
         let total = 0;
         let cartDomSting = '<div></div>';
         for (const id in this.cart) {
+            const productService = new ProductsService();
             const product = await this.productService.getProductById(id);
             total += product.price * this.cart[id];
             cartDomSting += `<div class="cart-row" data-id="${id}"> 
@@ -74,6 +75,7 @@ class Cart {
     async cartLengthAndCost() {
         let count = 0;
         let cost = 0;
+        const productService = new ProductsService();
         for (const key in this.cart) {
             const product = await this.productService.getProductById(key);
             const quantity = this.cart[key];
@@ -86,5 +88,4 @@ class Cart {
     }
 }
 
-new Cart
 

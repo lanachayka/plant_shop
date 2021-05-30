@@ -159,5 +159,7 @@
         changeFlowers("changeSucc");
       }
 
+    new Cart();
+
 }) ();
 
