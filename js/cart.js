@@ -70,7 +70,9 @@ class Cart {
     }
     async updateBadge() {
         const count = await this.cartLengthAndCost();
-        if (count>0) document.querySelector('.cart-badge').innerHTML=`${count}`;
+        if (count > 0) {
+            document.querySelector('.cart-badge').innerHTML=`${count}`;
+        } 
     }
     async cartLengthAndCost() {
         let count = 0;

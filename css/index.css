@@ -1310,6 +1310,13 @@ footer {
 
 .cart-badge {
     color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    z-index: 3;
+    top: 100px;
 }
 
 .cart-row {
