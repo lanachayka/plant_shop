@@ -1312,24 +1312,6 @@ footer {
     color: var(--text-color);
 }
 
-.cart-product-price {
-    font-size: 10px;
-    line-height: 1.5;
-    letter-spacing: .05em;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: var(--text-color);
-    margin-right: 10px;
-}
-
-.cart-product-title {
-    font-size: 10px;
-    line-height: 1.4;
-    letter-spacing: .064em;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: var(--text-color);
-    margin-right: 10px;
-}
-
 .cart-row {
     display: flex;
     flex-direction: row;

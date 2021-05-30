@@ -23,8 +23,8 @@ class Cart {
             total += product.price * this.cart[id];
             cartDomSting += `<div class="cart-row" data-id="${id}"> 
             <img src="${product.img}" alt="${product.name}">
-            <div class="cart-product-title">${product.name}</div>
-            <div class="cart-product-price">${product.price}</div>
+            <div class="cart-title">${product.name}</div>
+            <div class="cart-title">${product.price}</div>
             <div>${this.cart[id]}</div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm plus">+</button></div>
             <div class="plus-minus"><button data-id=${id} class="btn btn-sm minus">-</button></div>
