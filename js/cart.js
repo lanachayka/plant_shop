@@ -69,7 +69,7 @@ class Cart {
         this.updateBadge();
     }
     async updateBadge() {
-        const {count, cost} = await this.cartLengthAndCost();
+        const count = await this.cartLengthAndCost();
         if (count>0) document.querySelector('.cart-badge').innerHTML=`${count}`;
     }
     async cartLengthAndCost() {
@@ -79,7 +79,7 @@ class Cart {
             const product = await this.productService.getProductById(key);
             const quantity = this.cart[key];
             count += quantity;
-            cost += quantity.product.price;
+            cost += quantity * product.price;
         }
         return {
             count, cost
