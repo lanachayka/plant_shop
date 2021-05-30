@@ -75,7 +75,6 @@ class Cart {
     async cartLengthAndCost() {
         let count = 0;
         let cost = 0;
-        const productService = new ProductsService();
         for (const key in this.cart) {
             const product = await this.productService.getProductById(key);
             const quantity = this.cart[key];
