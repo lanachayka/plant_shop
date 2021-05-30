@@ -158,8 +158,5 @@
       function changeSucc() {
         changeFlowers("changeSucc");
       }
-
-    new Cart();
-
 }) ();
 
