@@ -7,7 +7,7 @@ class ProductList {
     async addEventListeners() {
       document
         .querySelectorAll(
-          '.openCartLink'
+          '.buy-link'
         )
         .forEach(link =>
           link.addEventListener('click', event =>
