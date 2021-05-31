@@ -46,7 +46,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Floral Moss</p>
     <p class="pick-of-the-month-price">$33,00</p>
     <nav class="green-nav">
-        <a data-id="1" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="1" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -54,7 +54,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Areca Palm</p>
     <p class="pick-of-the-month-price">$22,00</p>
     <nav class="green-nav">
-        <a data-id="2" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="2" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -62,7 +62,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Monstera Obliqua</p>
     <p class="pick-of-the-month-price">$45,00</p>
     <nav class="green-nav">
-        <a data-id="3" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="3" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -70,7 +70,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Sansevieria Trifasciata</p>
     <p class="pick-of-the-month-price">$36,00</p>
     <nav class="green-nav">
-        <a data-id="4" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="4" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>`
     const succulentsHTML = `
@@ -79,7 +79,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Graptosedum Darley</p>
     <p class="pick-of-the-month-price">$32,00</p>
     <nav class="green-nav">
-        <a data-id="5" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="5" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -87,7 +87,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Haworthia Venosa</p>
     <p class="pick-of-the-month-price">$48,00</p>
     <nav class="green-nav">
-        <a data-id="6" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="6" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -95,7 +95,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Silver Torch</p>
     <p class="pick-of-the-month-price">$24,00</p>
     <nav class="green-nav">
-    <a data-id="7" class="openCartLink" href="#cartModal">ORDER NOW</a>
+    <a data-id="7" class="buy-link" href="#cartModal">ORDER NOW</a>
   </nav>
   </div>
   <div class="pick-of-the-month-box">
@@ -103,7 +103,7 @@ const indoorHTML = `
     <p class="pick-of-the-month-name">Notocactus Roseoluteus</p>
     <p class="pick-of-the-month-price">$33,00</p>
     <nav class="green-nav">
-        <a data-id="8" class="openCartLink" href="#cartModal">ORDER NOW</a>
+        <a data-id="8" class="buy-link" href="#cartModal">ORDER NOW</a>
     </nav>
   </div>`
     const plantsOffers = document.querySelector(".plants-offers");

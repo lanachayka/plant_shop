@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants Shop Areca Palm</title>
     <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
@@ -38,12 +39,56 @@
             <p class="product-code">Product code 2</p>
             <p class="product-price">$22,00</p>
             <nav class="green-nav">
-                <a href="#cart">ADD TO CART</a>
+                <a data-id="2" class="buy-link" href="#cartModal">ADD TO CART</a>
             </nav>
             <p class="product-description-title">Description</p>
         <hr>
         <p class="product-description-text">It is a multi-stemmed palm. Cylindrical trunks with a diameter of about 15 cm grow close to each other, are erect and slightly sloping. Green young stems, as they mature, change their color to yellow. <br><br> Care: <br>
             The optimum temperature for this plant is +22-24 °C throughout the year. At the same time, cooling in winter to +15 °C and warming in summer to +30 °C are quite acceptable. But the palm tree does not tolerate sudden changes in temperature.</p>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+        <img class="btn-primary-img" src="img/shopping-bag.svg" alt="Shopping Bag">
+        <span class="cart-badge d-none"></span>
+     </button>
+    
+    <!-- Modal -->
+    <div class="modal fade openCartLink" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Shopping cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="cart-title">Products</p>
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="form-box">
+                    <p class="cart-title">PLACE AN ORDER</p>
+                    <div class="mb-3">
+                        <label for="nameFormControlInput1" class="form-label">Name: <span>*</span></label>
+                        <input type="text" class="form-control" id="nameFormControlInput1" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailFormControlInput2" class="form-label">Email: <span>*</span></label>
+                        <input type="email" class="form-control" id="emailFormControlInput2" placeholder="Your email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneFormControlInput3" class="form-label">Phone: <span>*</span></label>
+                        <input type="number" class="form-control" id="phoneFormControlInput3" placeholder="Your phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentFormControlTextarea1" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comentFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary order" data-bs-dismiss="modal">ORDER</button>
+            </div>
+        </div>
         </div>
     </div>
     <footer>
@@ -59,5 +104,11 @@
             </div>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/alert-window.js"></script>
+    <script src="js/product-service.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/new.js"></script>
 </body>
 </html>
