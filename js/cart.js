@@ -15,7 +15,7 @@ class Cart {
         .addEventListener('click', ev => this.order(ev));
     }
     saveCart() {
-        localStorage['cart'] = JSON.stringify(this.cart);
+      localStorage['cart'] = JSON.stringify(this.cart);
     }
     async renderCart() {
         let total = 0;
