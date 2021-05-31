@@ -2,7 +2,7 @@
     {
         "id":"1",
         "category": "evergreens",
-        "img": "img/plants_of_the_month1.png",
+        "img": "img/small-product-img/plants_of_the_month1.png",
         "name": "Floral Moss",
         "code": "Product code 1",
         "price": 33,
@@ -12,7 +12,7 @@
     {
         "id":"2",
         "category": "evergreens",
-        "img": "img/plants_of_the_month2.png",
+        "img": "img/small-product-img/plants_of_the_month2.png",
         "name": "Areca Palm",
         "code": "Product code 2",
         "price": 22,
@@ -22,7 +22,7 @@
     {
         "id":"3",
         "category": "evergreens",
-        "img": "img/plants_of_the_month3.jfif",
+        "img": "img/small-product-img/plants_of_the_month3.jfif",
         "name": "Monstera Obliqua",
         "code": "Product code 3",
         "price": 45,
@@ -32,7 +32,7 @@
     {
         "id":"4",
         "category": "evergreens",
-        "img": "img/plants_of_the_month4.jfif",
+        "img": "img/small-product-img/plants_of_the_month4.jfif",
         "name": "Sansevieria Trifasciata",
         "code": "Product code 4",
         "price": 36,
@@ -42,7 +42,7 @@
     {
         "id":"5",
         "category": "succulents",
-        "img": "img/graptosedum.png",
+        "img": "img/small-product-img/graptosedum.png",
         "name": "Graptosedum Darley",
         "code": "Product code 5",
         "price": 32,
@@ -52,7 +52,7 @@
     {
         "id":"6",
         "category": "succulents",
-        "img": "img/venosa.png",
+        "img": "img/small-product-img/venosa.png",
         "name": "Haworthia Venosa",
         "code": "Product code 6",
         "price": 48,
@@ -62,7 +62,7 @@
     {
         "id":"7",
         "category": "succulents",
-        "img": "img/torch.png",
+        "img": "img/small-product-img/torch.png",
         "name": "Silver Torch",
         "code": "Product code 7",
         "price": 24,
@@ -72,7 +72,7 @@
     {
         "id":"8",
         "category": "succulents",
-        "img": "img/roseoluteus.png",
+        "img": "img/small-product-img/roseoluteus.png",
         "name": "Notocactus Roseoluteus",
         "code": "Product code 8",
         "price": 33,
