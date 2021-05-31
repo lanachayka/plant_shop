@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants Shop Sansevieria Trifasciata</title>
     <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
@@ -38,11 +39,55 @@
             <p class="product-code">Product code 4</p>
             <p class="product-price">$36,00</p>
             <nav class="green-nav">
-                <a href="#cart">ADD TO CART</a>
+                <a data-id="4" class="buy-link">ADD TO CART</a>
             </nav>
             <p class="product-description-text">It is a perennial plant with rosettes of 6-8 leaves in length. The leaves are hard, sword-like, up to 1 m long, dark green with light transverse wavy stripes, most brightly colored in young leaves. There are whitish-green flowers, collected in a cluster, with a strong aroma. Sansevieria Trifasciata blooms in spring and autumn.
                 <br><br> Care: <br>
                 Sansevieria will not die in low light conditions but you should not constantly keep it in the back of the room. It needs a lot of light, including sunlight.</p>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+        <img class="btn-primary-img" src="img/shopping-bag.svg" alt="Shopping Bag">
+        <span class="cart-badge d-none"></span>
+     </button>
+    
+    <!-- Modal -->
+    <div class="modal fade openCartLink" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Shopping cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="cart-title">Products</p>
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="form-box">
+                    <p class="cart-title">PLACE AN ORDER</p>
+                    <div class="mb-3">
+                        <label for="nameFormControlInput1" class="form-label">Name: <span>*</span></label>
+                        <input type="text" class="form-control" id="nameFormControlInput1" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailFormControlInput2" class="form-label">Email: <span>*</span></label>
+                        <input type="email" class="form-control" id="emailFormControlInput2" placeholder="Your email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneFormControlInput3" class="form-label">Phone: <span>*</span></label>
+                        <input type="number" class="form-control" id="phoneFormControlInput3" placeholder="Your phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentFormControlTextarea1" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comentFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary order" data-bs-dismiss="modal">ORDER</button>
+            </div>
+        </div>
         </div>
     </div>
     <footer>
@@ -58,5 +103,11 @@
             </div>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/alert-window.js"></script>
+    <script src="js/product-service.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/new.js"></script>
 </body>
 </html>
