@@ -358,7 +358,7 @@ footer {
     position: fixed;
     z-index: 2;
     right: 30px;
-    top: 150px;
+    top: 100px;
 }
 
 .btn-primary:hover{
