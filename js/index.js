@@ -40,74 +40,7 @@ const indoorHTML = `
         <h3 class="plants-offer-title">Decorative Conifers</h3>
         <p class="plants-offer-text">The real decoration of any yard is decorative coniferous trees. Thuja, mountain pines, cedar pines will charm anyone! These are unpretentious, but very beautiful trees.</p>
     </div>`
-    const evergreensHTML = `
-    <div class="pick-of-the-month-box">
-    <a href="floral-moss.html"><img src="img/plants_of_the_month1.png" alt="Floral Moss"></a>
-    <p class="pick-of-the-month-name">Floral Moss</p>
-    <p class="pick-of-the-month-price">$33,00</p>
-    <nav class="green-nav">
-        <a data-id="1" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="areca-palm.html"><img src="img/plants_of_the_month2.png" alt="Areca Palm"></a> 
-    <p class="pick-of-the-month-name">Areca Palm</p>
-    <p class="pick-of-the-month-price">$22,00</p>
-    <nav class="green-nav">
-        <a data-id="2" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="monstera-obliqua.html"><img src="img/plants_of_the_month3.jfif" alt="Monstera Obliqua"></a>
-    <p class="pick-of-the-month-name">Monstera Obliqua</p>
-    <p class="pick-of-the-month-price">$45,00</p>
-    <nav class="green-nav">
-        <a data-id="3" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="sansevieria-trifasciata.html"><img src="img/plants_of_the_month4.jfif" alt="Sansevieria Trifasciata"></a>
-    <p class="pick-of-the-month-name">Sansevieria Trifasciata</p>
-    <p class="pick-of-the-month-price">$36,00</p>
-    <nav class="green-nav">
-        <a data-id="4" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>`
-    const succulentsHTML = `
-    <div class="pick-of-the-month-box">
-    <a href="graptosedum-darley.html"><img src="img/graptosedum.png" alt="Graptosedum Darley"></a>
-    <p class="pick-of-the-month-name">Graptosedum Darley</p>
-    <p class="pick-of-the-month-price">$32,00</p>
-    <nav class="green-nav">
-        <a data-id="5" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="haworthia-venosa.html"><img src="img/venosa.png" alt="Haworthia Venosa"></a> 
-    <p class="pick-of-the-month-name">Haworthia Venosa</p>
-    <p class="pick-of-the-month-price">$48,00</p>
-    <nav class="green-nav">
-        <a data-id="6" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="silver-torch.html"><img src="img/torch.png" alt="Silver Torch"></a>
-    <p class="pick-of-the-month-name">Silver Torch</p>
-    <p class="pick-of-the-month-price">$24,00</p>
-    <nav class="green-nav">
-    <a data-id="7" class="buy-link">ORDER NOW</a>
-  </nav>
-  </div>
-  <div class="pick-of-the-month-box">
-    <a href="notocactus-roseoluteus.html"><img src="img/roseoluteus.png" alt="Notocactus Roseoluteus"></a>
-    <p class="pick-of-the-month-name">Notocactus Roseoluteus</p>
-    <p class="pick-of-the-month-price">$33,00</p>
-    <nav class="green-nav">
-        <a data-id="8" class="buy-link">ORDER NOW</a>
-    </nav>
-  </div>`
     const plantsOffers = document.querySelector(".plants-offers");
-    const pickOfTheMonth = document.querySelector(".pick-of-the-month-boxes");
     function changeFlowers(flowersType) {
         
         if (flowersType === "changeInd") {
@@ -118,15 +51,6 @@ const indoorHTML = `
         if (flowersType === "changeOut") {
             plantsOffers.innerHTML = "";
             plantsOffers.innerHTML += outdoorHTML;
-        }
-        
-        if (flowersType === "changeEver") {
-            pickOfTheMonth.innerHTML = "";
-            pickOfTheMonth.innerHTML += evergreensHTML;
-        }
-        if (flowersType === "changeSucc") {
-            pickOfTheMonth.innerHTML = "";
-            pickOfTheMonth.innerHTML += succulentsHTML;
         }
       }
       
@@ -144,18 +68,6 @@ const indoorHTML = `
         changeFlowers("changeOut");
       }
   
-      const btnEver = document.querySelector(".ever");
-      btnEver.addEventListener("click", changeEver);
       
-      function changeEver() {
-        changeFlowers("changeEver");
-      }
-      
-      const btnSucc = document.querySelector(".succ");
-      btnSucc.addEventListener("click", changeSucc);
-      
-      function changeSucc() {
-        changeFlowers("changeSucc");
-      }
 
 
