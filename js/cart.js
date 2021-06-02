@@ -7,9 +7,9 @@ class Cart {
         this.updateBadge();
     }
     addEventListeners() {
-        document
-        .querySelector('.openCartLink')
-        .addEventListener('click', () => this.renderCart());
+       document
+       .querySelector('.openCartLink')
+       .addEventListener('click', () => this.renderCart());
         this.cartContainer
         .querySelector('.order')
         .addEventListener('click', ev => this.order(ev));
