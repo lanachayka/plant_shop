@@ -9,9 +9,9 @@ class ProductList {
         .then(() => this.addEventListeners());    
     }
     async renderProducts() {
-      document.querySelector('.pick-of-the-month-boxes').innerHTML = '';
       let productListDomString = '';
       if (this.category === 'evergreens') {
+        document.querySelector('.product-container').innerHTML = '';
         productListDomString += `<div class="pick-of-the-month-box">
         <a href="floral-moss.html"><img src="img/plants_of_the_month1.png" alt="Floral Moss"></a>
         <p class="pick-of-the-month-name">Floral Moss</p>
@@ -45,6 +45,7 @@ class ProductList {
         </nav>
       </div>`
       } else if (this.category === 'succulents') {
+        document.querySelector('.product-container').innerHTML = '';
         productListDomString += `
         <div class="pick-of-the-month-box">
         <a href="graptosedum-darley.html"><img src="img/graptosedum.png" alt="Graptosedum Darley"></a>
@@ -78,7 +79,7 @@ class ProductList {
             <a data-id="8" class="buy-link">ORDER NOW</a>
         </nav>
       </div>`
-      } document.querySelector('.pick-of-the-month-boxes').innerHTML += productListDomString;
+      } document.querySelector('.product-container').innerHTML += productListDomString;
     }
     async addEventListeners() {
       document
